@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700|Titan+One|Creepster|Satisfy|Eczar:700);
+
+body {
+  font-family: Nunito, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3a3a3a;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: #2f2f2f;
+}
+
+.arts__body___3acI_-camelCase {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.styles__headerContainer___sjd3P-camelCase {
+  overflow: hidden;
+  position: relative;
+}
+
+.styles__headerImage___3p3rE-camelCase {
+  height: 100vh;
+  width: 52.5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: -1;
+  filter: drop-shadow(0px 0px 10px #1f1f1f);
+}
+
+.styles__logoText___1eUDm-camelCase {
+  font-size: 7.3vh;
+  font-family: Titan One, sans-serif;
+  align-items: center;
+  text-shadow: 2px 2px 8px grey;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 8px grey;
+  color: #ffffff;
+}
+
+.styles_image {
+  margin: auto;
+  align-items: center;
+  margin-top: 5vw;
+  justify-content: center;
+  display: flex;
+  border-radius: 100px;
+  width: 13vw;
+}
+
+.styles__welcomeDesc___OyjZk-camelCase {
+  font-size: 3.35vh;
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.styles__welcomeButton___39pgl-camelCase {
+  border-radius: 11.5px;
+  border: 3px solid #fff;
+  font-size: 4vh;
+  width: 30vh;
+  line-height: 6vh;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  margin: auto;
+  display: grid;
+  margin-top: 1vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+.styles__welcomeButton___39pgl-camelCase:focus,
+.styles__welcomeButton___39pgl-camelCase:hover {
+  background-color: #ffffff;
+  color: #2f2f2f;
+}
+
+#bottomL {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 0.5vw;
+  font-size: 0.75vw;
+}
+
+#bottomR {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin-right: 0.5vw;
+  font-size: 0.75vw;
+}
+
+.fa {
+  font-size: 3em;
+  color: white;
+}
