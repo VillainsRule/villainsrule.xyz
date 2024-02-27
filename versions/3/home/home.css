@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee|Galindo);
+
+body {
+    font-family: 'Galindo';
+    background-color: #131313;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://emojiguide.com/wp-content/uploads/2022/07/Yellow-smiles-background-1024x854.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+}
+
+.backgroundBlur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: -2;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    transform: translateY(-50%);
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+}
+
+.pfp {
+    height: 30vh;
+}
+
+.name {
+    font-size: 20vh;
+    text-align: center;
+    text-shadow: 2px 2px 8px grey;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'Bungee';
+}
+
+.desc {
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6vw;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.button {
+    border: 3px solid #fff;
+    font-size: 4vh;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-top: 15px;
+    transition: 0.5s;
+    font-family: 'Galindo';
+    text-align: center;
+    border-radius: 2px;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #ffffff;
+    color: #2f2f2f;
+    border: 9px solid white;
+    transform: scale(1.2);
+}
+
+.smallScreen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 7vw;
+    color: white;
+}
+
+@media only screen and (max-width: 750px) {
+    .pfp {
+        height: 25vh;
+    }
+    
+    .name {
+        font-size: 15vh;
+    }
+
+    .desc {
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pfp {
+        height: 20vh;
+    }
+    
+    .name {
+        font-size: 12vh;
+    }
+
+    .desc {
+        font-size: 3.5vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profileContainer {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .pfp {
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .buttonContainer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .content {
+        display: none;
+    }
+
+    .smallScreen {
+        display: flex;
+    }
+}

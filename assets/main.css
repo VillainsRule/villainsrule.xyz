@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee:wght@400;800&display=swap');
+
+:root {
+    --font-family: 'Bungee';
+}
+
+body {
+    color: white;
+    background: #000000;
+    font-family: var(--font-family);
+    user-select: none;
+    overflow: hidden;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 120%;
+    min-height: 120%;
+    top: -10%;
+    left: -10%;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(.5rem);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.usernameTitle {
+    transition: all .25s cubic-bezier(0.42, 0, 0.51, 1.87);
+    font-weight: lighter;
+    font-size: 5.5rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 2px 2px 6px #000000 !important;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.usernameTitle:hover {
+    color: red;
+}
+
+@keyframes usernameAnimation {
+    0% {
+        font-size: 6.5em;
+    }
+
+    to {
+        font-size: 5.5em;
+    }
+}
+
+.typed {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+    padding: 0;
+}
+
+.typed span {
+    font-weight: lighter;
+    text-shadow: 2px 2px 6px #000000 !important;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: center;
+    width: 757px;
+    height: 60px;
+    margin-top: 2.5rem;
+}
+
+.button {
+    width: 210px;
+    text-align: center;
+    cursor: pointer;
+    margin: 1rem .5rem;
+    border: .187rem solid white;
+    padding: 0.8rem 2.5rem;
+    color: white;
+    transition: all .4s cubic-bezier(0.42, 0, 0.24, 1.87);
+    border-radius: 10vw;
+    letter-spacing: .15rem;
+    font-size: 1.3rem;
+    height: 1.55rem;
+    text-shadow: 2px 2px 6px #000000 !important;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: white;
+    color: black;
+}
+
+.button:active {
+    transform: scale(1.05);
+    background: #ffffff;
+    color: #171717;
+}
+
+.loadCover {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000e3;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1em);
+    cursor: pointer;
+}
+
+.loadCover.show {
+    display: flex
+}
+
+.loadCoverText {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 742px) {
+    .buttonRow {
+        width: auto;
+        height: auto;
+    }
+
+    .button {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .usernameTitle {
+        font-size: 4.20rem;
+    }
+
+    .buttonRow {
+        transform: translateX(21px);
+    }
+}
+
+@media only screen and (max-height: 760px) and (max-width: 719px) {
+    .button {
+        display: block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: .6rem .5rem .7rem .5rem;
+    }
+
+    .usernameTitle {
+        font-size: 12vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .loadCoverText {
+        font-size: 2rem;
+    }
+}
