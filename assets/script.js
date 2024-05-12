@@ -15,18 +15,18 @@ let emojis = ['😏', '😉', '😎', '😍', '🤩', '🤔', '🤨', '🥳', '�
 
 let usernameIteration = 0;
 document.querySelector('.usernameTitle').style.animation = '1s linear 1s infinite running usernameAnimation';
-setInterval(() => document.querySelector('.usernameTitle').innerHTML = 'THONK ' + emojis[usernameIteration++ % emojis.length], 1000);
+setInterval(() => document.querySelector('.usernameTitle').innerHTML = 'VILLAINSRULE ' + emojis[usernameIteration++ % emojis.length], 1000);
 
 let titleIteration = 0;
 document.querySelector('title').innerHTML = emojis[titleIteration++ % emojis.length], 585;
 
 new Typed('.type', {
     strings: [
-        'fullstack developer',
-        'javascript / node',
+        'javascript',
+        'node',
         'frontend',
+        'react',
         'sql',
-        'c#',
         'python',
         ''
     ],
